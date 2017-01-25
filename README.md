@@ -1,5 +1,7 @@
 # Github Tab Size Manager (Chrome Extension)
 Manages tab size while viewing code on github.
+Change tab size from options menu.
+
 Add to chrome: https://chrome.google.com/webstore/detail/github-tab-size-manager/enjegllgfhbkappebfdbgheefocllglo?hl=en-US
 
 ## Changelog
