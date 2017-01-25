@@ -6,24 +6,15 @@
  *
  */
 
- var tabsize = null;
-
- function manageUrl() {
- 	var tabSize = tabsize || 2;
- 	var url = window.location.href;
- 	if(url.includes("ts=")) return;
- 	if(url.includes("github.com")) {
- 		if(url.includes("?")) {
- 			url += ("&ts=" + tabSize);
- 		} else {
- 			url += ("?ts=" + tabSize);
- 		}
- 		window.location.href = url;
- 	}
- }
-
- chrome.storage.sync.get('tabSize', function(items) {
- 	tabsize = items.tabSize;
- 	manageUrl();
+ function changeCSS() {
+ 	var tabSize = null;
+ 	chrome.storage.sync.get('tabSize', function(items) {
+ 		tabSize = items.tabSize;
+ 		$(".tab-size[data-tab-size='2'], .tab-size[data-tab-size='4'], " + 
+ 		".tab-size[data-tab-size='8'], .inline-review-comment, .gist table.lines, " +
+ 		"table.diff-table, .markdown-body pre").css("tab-size", String(tabSize));
  });
+}
+
+ changeCSS();
 
