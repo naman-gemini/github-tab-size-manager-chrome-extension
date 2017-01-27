@@ -8,7 +8,7 @@
 
  function changeCSS() {
  	chrome.storage.local.get('tabSize', function(items) {
- 		var tabSize = items.tabSize;
+ 		var tabSize = items.tabSize || 2;
  		// console.log(tabSize);
  		$(".tab-size[data-tab-size='2'], .tab-size[data-tab-size='4'], " + 
  		".tab-size[data-tab-size='8'], .inline-review-comment, .gist table.lines, " +
