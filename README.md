@@ -11,11 +11,11 @@ Add to chrome: https://chrome.google.com/webstore/detail/github-tab-size-manager
 
 ## Changelog
 v 1.2
-* Default value of tabSize set to 2, even before acessing options
+* Default value of `tabSize` set to 2, even before acessing options
 
 v 1.1
 * Changed `chrome.storage.sync` to `chrome.storage.local` (faster)
-* Added tabSize validation in options
+* Added `tabSize` validation in options
 
 v 1.0
 * Changes css and not the url anymore
