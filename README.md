@@ -10,6 +10,10 @@ Add to chrome: https://chrome.google.com/webstore/detail/github-tab-size-manager
 ![Tab Size 2] (https://github.com/naman-gemini/github-tab-size-manager-chrome-extension/blob/master/images/tabsize%20-%202.png)
 
 ## Changelog
+v 1.4
+* Removed unecessary permissions
+* Moved google analytics code from background script to content script
+
 v 1.3
 * Added google analytics tracking
 

@@ -1,6 +1,6 @@
 {
   "name": "Github Tab Size Manager",
-  "version": "1.3",
+  "version": "1.4",
   "manifest_version": 2,
   "icons": {
     "128": "images/icon.png"
@@ -8,7 +8,7 @@
   "options_page": "options.html",
   "description": "Use this extension to view git files with tab size specified",
   "permissions": [
-    "*://*/*", "storage", "*://github.com/*", "tabs", "webNavigation"
+    "storage", "*://gist.github.com/*", "*://github.com/*", "tabs", "webNavigation"
   ],
   "content_scripts": [{
     "matches": ["*://github.com/*", "*://gist.github.com/*"],
