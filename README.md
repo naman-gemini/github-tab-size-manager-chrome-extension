@@ -5,9 +5,9 @@ Change tab size from options menu.
 Add to chrome: https://chrome.google.com/webstore/detail/github-tab-size-manager/enjegllgfhbkappebfdbgheefocllglo?hl=en-US
 
 ## Screenshots
-![Default Tab Size] (https://github.com/naman-gemini/github-tab-size-manager-chrome-extension/blob/master/images/tabsize%20-%208.png)
+![Default Tab Size](https://github.com/naman-gemini/github-tab-size-manager-chrome-extension/blob/master/images/tabsize%20-%208.png)
 ========
-![Tab Size 2] (https://github.com/naman-gemini/github-tab-size-manager-chrome-extension/blob/master/images/tabsize%20-%202.png)
+![Tab Size 2](https://github.com/naman-gemini/github-tab-size-manager-chrome-extension/blob/master/images/tabsize%20-%202.png)
 
 ## Changelog
 v 1.5
