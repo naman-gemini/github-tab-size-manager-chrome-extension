@@ -10,13 +10,14 @@
  	chrome.storage.local.get('tabSize', function(items) {
  		var tabSize = items.tabSize || 2;
  		// console.log(tabSize);
- 		$(".tab-size[data-tab-size='2'], .tab-size[data-tab-size='4'], " + 
- 		".tab-size[data-tab-size='8'], .inline-review-comment, .gist table.lines, " +
- 		"table.diff-table, .markdown-body pre").css("tab-size", String(tabSize));
+ 		$('head').append('<style type="text/css">' + 
+ 		'.tab-size[data-tab-size="2"], .tab-size[data-tab-size="4"], ' + 
+	 	'.tab-size[data-tab-size="8"], .inline-review-comment, .gist table.lines, table.diff-table, ' +
+	 	'.markdown-body pre, body > pre { tab-size: ' + String(tabSize) + '!important; }' + '</style>');
  });
 }
 
- changeCSS();
+setTimeout(function(){ changeCSS(); }, 1000);
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
